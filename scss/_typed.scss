@@ -1,0 +1,21 @@
+#typed_info{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Comic Neue', cursive;
+   
+      p.first_text{
+          margin-top: 150px !important;
+          letter-spacing: 4px;
+      }
+      p.second_text{
+          margin-top: -20px !important;
+          letter-spacing: 3pxx;
+          font-size: 23px;
+      }
+}
+@media (max-width: 767px){
+    #typed_info{
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,28 @@
+@import '_navbar.scss';
+@import '_typed.scss';
+@import '_about.scss';
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(6, 6, 6);
+    overflow-x: hidden;
+}
+#span{
+    border-left: 2px solid #000;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    background: transparent;
+    margin-left: 25%;
+    opacity: 0.3;
+}
+#span2{
+    border-left: 1px solid black;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    background: transparent;
+    margin-left: 75%;
+    opacity: 0.3;
+}

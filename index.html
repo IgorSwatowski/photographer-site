@@ -1,0 +1,124 @@
+<DOCTYPEhtml>
+
+<html lang="pl">
+
+<head>
+
+     <!-- TITLE -->
+     <title>Wizytówka</title>
+     <!-- END TITLE -->
+
+     <!-- START META -->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- END META -->
+     
+     <!-- START LINKS -->
+     <link rel="stylesheet" href="scss/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- END LINKS -->
+
+     <!-- START FONTS -->
+     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+     <!-- END FONTS -->
+
+
+</head>
+
+
+<body>
+
+  <div id="span"></div>
+  <div id="span2"></div>
+	<!-- START NAVBAR SECTION -->
+	<div id="navbar-section">
+		<!-- LOGO SECTION -->
+       <div class="logo-left">
+             .TOMMORRISON
+       </div>
+       <!-- END LOGO SECTION -->
+
+       <!-- START HAMBURGER SECTION -->
+       <button class="hamburger">
+        <span class="hamburger__box">
+          <span class="hamburger__inner"></span>
+        </span>
+      </button>
+        <!-- END HAMBURGER SECTION -->
+
+        <!-- START NAV SECTION-->
+      <div class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="">Home</a></li>
+          <li class="navigation__item"><a href="">About Me</a></li>
+          <li class="navigation__item"><a href="">My Skills</a></li>
+          <li class="navigation__item"><a href="">Portfolio</a></li>
+          <li class="navigation__item"><a href="">Contact</a></li>
+        </ul>
+      </div>
+	</div>
+	<!-- END NAVBAR SECTION -->
+
+    <!-- START TYPED INFO SECTION -->
+	<div id="typed_info">
+        <p class="first_text">Hello, I'm Tom <a style="color: rgb(26, 187, 179);">Morrison</p></p>
+       <p class="second_text"><span id="typed"></span></p>
+    </div>
+    <!-- END TYPED INFO SECTON -->
+
+    <!-- START ABOUT SECTION -->
+    <div id="about_me">
+          <div class="about_me_image">
+              <img src="#" alt="">
+          </div>
+    </div>
+    <!-- END ABOUT SECTION -->
+
+    <!-- START SKILLS SECTION -->
+    <div id="skills">
+       
+    </div>
+    <!-- END SKILLS SECTION -->
+
+    <!-- START PORTFOLIO SECTION -->
+    <div id="portfolio">
+
+    </div>
+    <!-- END PORTFOLIO SECTION -->
+    
+    <!-- START CONTACT SECTION -->
+    <div id="contact">
+
+    </div>
+    <!-- END CONTACT SECTION -->
+
+    <!-- FOOTER CONTACT SECTION -->
+    <div id="footer">
+
+    </div>
+    <!-- END FOOTERCONTACT SECTION -->
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.navigation');
+
+const handleClick = () => {
+  hamburger.classList.toggle('hamburger--active');
+  nav.classList.toggle('navigation--active');
+}
+
+hamburger.addEventListener('click', handleClick);
+</script>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/jquery/jquery-migrate.min.js"></script>
+<script src="vendor/typed/typed.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+
+
+
+
+</html>
