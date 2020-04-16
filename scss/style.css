@@ -1,12 +1,34 @@
-#navbar-section {
-  color: #fff;
-  padding: 30px;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+#span {
+  border-left: 2px solid #000;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  background: transparent;
+  margin-left: 25%;
+  opacity: 0.3;
 }
 
-#navbar-section .logo-left {
-  font-size: 17px;
+#span2 {
+  border-left: 1px solid black;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  background: transparent;
+  margin-left: 75%;
+  opacity: 0.3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.logo-right {
+  float: right;
+  color: #fff;
+  margin-top: 25px;
+  margin-right: 30px;
+  font-family: 'Comic Neue';
+  font-size: 22px;
 }
 
 *, *::before, *::after {
@@ -15,12 +37,12 @@
 
 .hamburger {
   padding: 10px;
+  display: inline-block;
   cursor: pointer;
-  float: right;
   background-color: transparent;
   border: 0;
-  margin: 0;
-  margin-top: -30px;
+  margin-top: 17px;
+  margin-left: 30px;
 }
 
 .hamburger, .navigation {
@@ -28,7 +50,7 @@
 }
 
 .hamburger--active {
-  transform: translatex(-250px);
+  transform: translatex(250px);
 }
 
 .hamburger__box {
@@ -41,7 +63,7 @@
 .hamburger__inner {
   width: 100%;
   height: 3px;
-  background-color: #1abbb3;
+  background-color: #FFFFFF;
   position: absolute;
   left: 0;
   top: 50%;
@@ -53,10 +75,10 @@
 .hamburger__inner::after {
   width: 100%;
   height: 3px;
-  background-color: #1abbb3;
+  background-color: #FFFFFF;
   position: absolute;
   content: '';
-  right: 0;
+  left: 0;
   transition: transform .2s .2s ease-in-out;
 }
 
@@ -82,12 +104,12 @@
 
 .navigation {
   height: 100vh;
-  width: 240px;
-  background-color: #FFFFFF;
+  width: 250px;
+  background-color: #f1ecec;
   position: absolute;
   top: 0;
-  right: 0;
-  transform: translateX(250px);
+  left: 0;
+  transform: translateX(-250px);
 }
 
 .navigation--active {
@@ -106,11 +128,13 @@
 .navigation__item a {
   text-decoration: none;
   color: #171717;
-  letter-spacing: 2px;
+  font-size: 22px;
+  font-family: 'Comic Neue';
 }
 
 .navigation__item a:hover {
-  color: #1abbb3;
+  color: #1e8ca0;
+  font-weight: bold;
 }
 
 #typed_info {
@@ -127,8 +151,8 @@
 
 #typed_info p.second_text {
   margin-top: -20px !important;
-  letter-spacing: 3pxx;
-  font-size: 23px;
+  letter-spacing: 3px;
+  font-size: 24px;
 }
 
 @media (max-width: 767px) {
@@ -137,29 +161,29 @@
   }
 }
 
+.button-top {
+  border: 1px solid rgba(97, 255, 246, 0.4);
+  background-color: rgba(97, 255, 246, 0.08);
+  padding: 15px;
+  width: 140px;
+  margin-top: 30px;
+}
+
+.button-top a {
+  text-decoration: none;
+  color: rgba(97, 255, 246, 0.7);
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.button-top:hover {
+  border: 1px solid rgba(97, 255, 246, 0.7);
+  box-shadow: 0 0 10px rgba(97, 255, 246, 0.2);
+  cursor: pointer;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
   background-color: #060606;
-  overflow-x: hidden;
-}
-
-#span {
-  border-left: 2px solid #000;
-  height: 100%;
-  width: 0;
-  position: absolute;
-  background: transparent;
-  margin-left: 25%;
-  opacity: 0.3;
-}
-
-#span2 {
-  border-left: 1px solid black;
-  height: 100%;
-  width: 0;
-  position: absolute;
-  background: transparent;
-  margin-left: 75%;
-  opacity: 0.3;
 }
