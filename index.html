@@ -69,9 +69,15 @@
     <!-- END TYPED INFO SECTON -->
 
     <!-- START ABOUT SECTION -->
-    <div id="about_me">
+    <div id="about">
           <div class="about_me_image">
-              <img src="#" alt="">
+              <img srcset="img/firstPhoto.jpg" src="img/firstPhoto.jpg" alt="" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          </div>
+          <div class="text_in_photo" data-tilt data-tilt-scale="1.2">
+              <p>Lorem Ipsum is simply dummy text s survived not only five centuries
+                 unchanged. It was popularised in the 1960s with the release of Le.
+                 Lorem Ipsum is simply dummy text s survived not only five centuries.
+                 Lorem Ipsum is simply dummy text s survived not only five centuries.</p>
           </div>
     </div>
     <!-- END ABOUT SECTION -->
@@ -112,6 +118,7 @@ const handleClick = () => {
 hamburger.addEventListener('click', handleClick);
 </script>
 
+<script src="js/vanilla-tilt.js"></script>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/jquery/jquery-migrate.min.js"></script>
 <script src="vendor/typed/typed.min.js"></script>

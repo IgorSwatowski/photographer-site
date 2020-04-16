@@ -1,0 +1,78 @@
+#about {
+  margin-top: 300px;
+}
+
+#about .about_me_image img {
+  width: 700px !important;
+  height: 450px !important;
+  margin-left: 40px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+  filter: brightness(60%);
+}
+
+@media (max-width: 980px) {
+  #about .about_me_image img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  data-tilt data-tilt-glare data-tilt-max-glare {
+    display: none !important;
+  }
+}
+
+#about .text_in_photo {
+  position: absolute !important;
+  z-index: 1 !important;
+  margin-left: 40%;
+  margin-top: 250px;
+  background-color: rgba(30, 140, 160, 0.2);
+  border: 1px solid rgba(97, 255, 246, 0.7);
+  box-shadow: 0 0 10px rgba(97, 255, 246, 0.2);
+  max-width: 40%;
+}
+
+#about .text_in_photo p {
+  padding: 12px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: 'Comic Neue';
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  #about .text_in_photo {
+    background-color: rgba(30, 140, 160, 0.2);
+    border: 1px solid rgba(97, 255, 246, 0.7);
+    box-shadow: 0 0 10px rgba(97, 255, 246, 0.2);
+    position: absolute;
+    max-width: 90%;
+    margin-left: 0;
+    margin-top: 300px;
+    display: block;
+  }
+  #about .text_in_photo p {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Comic Neue';
+    text-align: justify !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #about .text_in_photo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  #about .text_in_photo {
+    max-width: 100%;
+  }
+}
