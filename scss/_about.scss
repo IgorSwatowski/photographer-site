@@ -1,6 +1,19 @@
 #about{
    margin-top: 300px;
+   cursor: auto;
+   margin-bottom: 100px !important;
 }
+
+#about .about_header{
+     p{
+        color: #fff;
+        font-size: 30px;
+        font-family: 'Comic Neue', cursive;
+        letter-spacing: 2px;
+        text-align: center;
+     }
+}
+
 #about .about_me_image img{
     width: 100%;
     max-width: 600px;

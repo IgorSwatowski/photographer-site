@@ -51,6 +51,7 @@ html {
 
 .hamburger--active {
   transform: translatex(250px);
+  z-index: 1;
 }
 
 .hamburger__box {
@@ -58,6 +59,7 @@ html {
   height: 24px;
   display: inline-block;
   position: relative;
+  z-index: 1;
 }
 
 .hamburger__inner {
@@ -110,6 +112,7 @@ html {
   top: 0;
   left: 0;
   transform: translateX(-250px);
+  z-index: 1;
 }
 
 .navigation--active {
@@ -119,10 +122,12 @@ html {
 .navigation__list {
   margin-top: 50px;
   list-style: none;
+  z-index: 1;
 }
 
 .navigation__item {
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 .navigation__item a {
@@ -184,6 +189,16 @@ html {
 
 #about {
   margin-top: 300px;
+  cursor: auto;
+  margin-bottom: 100px !important;
+}
+
+#about .about_header p {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Comic Neue', cursive;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 #about .about_me_image img {
