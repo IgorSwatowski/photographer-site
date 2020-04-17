@@ -2,26 +2,16 @@
    margin-top: 300px;
 }
 #about .about_me_image img{
-    width: 700px !important;
-    height: 450px !important;
-    margin-left: 40px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     position: absolute;
+    margin-top: 50px;
     z-index: 1;
     opacity: 0.8;
     filter: brightness(60%);
 }
-@media (max-width: 980px){
-    #about .about_me_image img{
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-    data-tilt data-tilt-glare data-tilt-max-glare{
-        display: none !important;
-    }
 
-}
 #about .text_in_photo{
     position: absolute !important;
     z-index: 1 !important;
@@ -40,44 +30,39 @@
           text-decoration: none;
           font-family: 'Comic Neue';
           letter-spacing: 2px;
-          text-align: center;
+          text-align: justify;
+
 
       }
 
 }
+@media (min-width: 981px) and (max-width: 1980px){
+    #about .text_in_photo p{
+        display: block;
+    }
+    #about .text_in_photo{
+         position: static;
+         margin-top: 280px;
+         margin-bottom: 80px;
+         transform: none;
+         max-width: 100%;
+         width: 600px;
+         margin-left: 430px;
+    }
+}
 
 @media (max-width: 980px){
-    #about .text_in_photo{
-        background-color: rgba(30, 140, 160, 0.2);
-        border: 1px solid rgba(97, 255, 246, 0.7);
-        box-shadow: 0 0 10px rgba(97, 255, 246, 0.2);
-        position: absolute;
-        max-width: 90%;
-        margin-left: 0;
-        margin-top: 300px;
+    #about .text_in_photo p{
         display: block;
-
-
-          p{
-              color: #fff;
-              font-size: 14px;
-              text-decoration: none;
-              font-family: 'Comic Neue';
-              text-align: justify !important;
-          }
-    
     }
-}
-
-@media (max-width: 700px){
     #about .text_in_photo{
-        max-width: 100%;
+         position: static;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 340px;
+         margin-bottom: 80px;
+         transform: none;
+         max-width: 100%;
+         width: 600px;
     }
 }
-
-@media (max-width: 460px){
-    #about .text_in_photo{  
-        max-width: 100%;
-    }
-}
-

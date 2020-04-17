@@ -17,11 +17,16 @@
      <!-- START LINKS -->
      <link rel="stylesheet" href="scss/style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <!-- END LINKS -->
 
      <!-- START FONTS -->
      <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
      <!-- END FONTS -->
+
+     <!-- START SCRIPTS -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- END SCRIPTS -->
 
 
 </head>
@@ -34,13 +39,13 @@
 	<!-- START NAVBAR SECTION -->
 	<div id="navbar-section">
 		<!-- LOGO SECTION -->
-       <div class="logo-right">
+       <div class="logo-right" data-aos="fade-down">
              .TOMMORRISON
        </div>
        <!-- END LOGO SECTION -->
 
        <!-- START HAMBURGER SECTION -->
-       <button class="hamburger">
+       <button class="hamburger" data-aos="fade-right">
         <span class="hamburger__box">
           <span class="hamburger__inner"></span>
         </span>
@@ -62,18 +67,18 @@
 
     <!-- START TYPED INFO SECTION -->
 	<div id="typed_info">
-        <p class="first_text">Hello, I'm Tom <a style="color: rgb(26, 187, 179);">Morrison</p></p>
+        <p class="first_text" data-aos="fade-down">Hello, I'm Tom <a style="color: rgb(26, 187, 179);">Morrison</p></p>
        <p class="second_text"><span id="typed"></span></p>
-       <button class="button-top"><a href="#about">Read more</button>
+       <button class="button-top" data-aos="fade-up-right"><a href="#about">Read more</button>
     </div>
     <!-- END TYPED INFO SECTON -->
 
     <!-- START ABOUT SECTION -->
     <div id="about">
           <div class="about_me_image">
-              <img srcset="img/firstPhoto.jpg" src="img/firstPhoto.jpg" alt="" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+              <img srcset="img/firstPhoto.jpg" src="img/firstPhoto.jpg" alt="" data-aos="fade-right">
           </div>
-          <div class="text_in_photo" data-tilt data-tilt-scale="1.2">
+          <div class="text_in_photo"data-aos="fade-right">
               <p>Lorem Ipsum is simply dummy text s survived not only five centuries
                  unchanged. It was popularised in the 1960s with the release of Le.
                  Lorem Ipsum is simply dummy text s survived not only five centuries.
@@ -106,7 +111,12 @@
     </div>
     <!-- END FOOTERCONTACT SECTION -->
 
-    <script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
         const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.navigation');
 
@@ -118,7 +128,6 @@ const handleClick = () => {
 hamburger.addEventListener('click', handleClick);
 </script>
 
-<script src="js/vanilla-tilt.js"></script>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/jquery/jquery-migrate.min.js"></script>
 <script src="vendor/typed/typed.min.js"></script>
