@@ -8,11 +8,12 @@
   .button-top a{
       text-decoration: none;
       color: rgba(97, 255, 246, 0.7);
-      font-family: Arial, sans-serif;
+      font-family: 'Comic Neue';
       letter-spacing: 2px;
   }
   .button-top:hover{
     border: 1px solid rgba(97, 255, 246, 0.7);
     box-shadow: 0 0 10px rgba(97, 255, 246, 0.2);
+    background-color: rgba(97, 255, 246, 0.17);
     cursor: pointer;
   }

@@ -1,11 +1,12 @@
 #about{
-   margin-top: 300px;
+   margin-top: 400px;
    cursor: auto;
    margin-bottom: 100px !important;
 }
 
 #about .about_header{
      p{
+        margin-top: 100px;
         color: #fff;
         font-size: 30px;
         font-family: 'Comic Neue', cursive;
@@ -14,13 +15,23 @@
      }
 }
 
+@media (max-width: 980px){
+    #about .about_header{
+        p{
+             margin-top: 400px;
+        }
+   }   
+}
+
+
+
 #about .about_me_image img{
     width: 100%;
     max-width: 600px;
     height: auto;
     position: absolute;
     margin-top: 50px;
-    z-index: 1;
+    z-index: 1 !important;
     opacity: 0.8;
     filter: brightness(60%);
 }
