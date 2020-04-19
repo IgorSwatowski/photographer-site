@@ -113,7 +113,6 @@ html {
   left: 0;
   transform: translateX(-250px);
   z-index: 1;
-  border-radius: 0 0 30px 0;
 }
 
 .navigation--active {
@@ -191,9 +190,9 @@ html {
 }
 
 #about {
-  margin-top: 400px;
+  margin-top: 800px;
   cursor: auto;
-  margin-bottom: 100px !important;
+  margin-bottom: 600px !important;
 }
 
 #about .about_header p {
@@ -274,12 +273,88 @@ html {
   }
 }
 
+#skills {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+#skills .box {
+  position: relative;
+  color: #fff;
+  width: 320px;
+  margin-top: 40px;
+  background: #0f0f0f;
+  padding: 100px 40px 60px;
+  border: 1px solid rgba(97, 255, 246, 0.4);
+  box-shadow: 0 0 10px rgba(97, 255, 246, 0.2);
+}
+
+#skills .box h2 {
+  position: absolute;
+  font-family: 'Comic Neue';
+  left: 40px;
+  top: 30px;
+  font-size: 28px;
+  font-weight: 800;
+  z-index: 1;
+  transition: 0.5s;
+  color: #1caaa3;
+}
+
+#skills .box p {
+  font-size: 18px;
+  font-family: 'Comic Neue';
+}
+
+#skills .box:hover h2 {
+  color: #000;
+  transform: translateY(120px) translateX(-20px);
+}
+
+#skills .box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2dc7bf;
+  transform: scaleY(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+#skills .box:hover:before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+@media (max-width: 767px) {
+  #skills .box {
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    width: 320px;
+    margin-top: 40px;
+    background: #111010;
+    padding: 100px 40px 60px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background-color: #060606;
 }
