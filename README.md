@@ -6,6 +6,5 @@ Fictitious design of a person dealing with photography
 - CSS3
 - JavaScript
 - FlexBox
-- Grid
 - AOS library
 
