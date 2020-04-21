@@ -1,0 +1,37 @@
+
+.icons_on_background{
+    position: absolute;
+    top: 25%;
+    width: max-content;
+    left: 10%;
+    transform: translateY(-150%) translateX(-50%);
+       
+  }
+
+@keyframes moveAround {
+  100% {
+    transform: translateX(100%) translateY(-140%) rotate(95deg);
+  }
+}
+
+#top-left{
+    position: absolute;
+    top: -15%;
+    left: -10%;
+    transform: translateY(145%) translateX(45%);
+    animation: moveAround 1.2s infinite;
+    animation-direction: alternate;
+    width: 48px;
+    height: 48px;
+      
+}
+
+
+@media (max-width: 900px){
+    #top-left {
+        width: 18px;
+        height: 18px;
+        left: 12.5%;
+        top: 115%;     
+    }
+}
