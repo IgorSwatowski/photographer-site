@@ -1,92 +1,78 @@
 #about{
-   margin-top: 800px;
-   cursor: auto;
-   margin-bottom: 600px !important;
-}
+    margin-top: 400px;
+    display: flex;
 
-#about .about_header{
-     p{
-        margin-top: 100px;
-        color: #fff;
-        font-size: 30px;
-        font-family: 'Comic Neue', cursive;
-        letter-spacing: 2px;
-        text-align: center;
-     }
-}
-
-@media (max-width: 980px){
-    #about .about_header{
-        p{
-             margin-top: 400px;
+    .me_photo{
+        flex-direction: row;
+        img{
+           width: 400px;
+           z-index: 1;
+           margin: 0 auto;
+           padding: 0;
+           filter: brightness(60%);
         }
-   }   
+    }
+    .text_photo {
+        flex-direction: row;
+        padding: 30px;
+         p{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 21px;
+            padding: 30px;
+            margin-top: 150px;
+            margin-right: 25%;
+            
+        }
+
+        .half-circle{
+            img{
+                position: absolute;
+                width: 320px;
+                height: 320px;
+                z-index: 1;
+                margin-top: -250px;
+                margin-left: 180px;
+                opacity: 0.2;
+                transform: rotateZ(25deg);
+            }
+        }
+    }
 }
 
 
+/* MEDIA QUERIES */ 
+@media (max-width: 805px){
+    #about{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
 
-#about .about_me_image img{
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    position: absolute;
-    margin-top: 50px;
-    z-index: 1 !important;
-    opacity: 0.8;
-    filter: brightness(60%);
-}
-
-#about .text_in_photo{
-    position: absolute !important;
-    z-index: 1 !important;
-    margin-left: 40%;
-    margin-top: 250px;
-    background-color: rgba(30, 140, 160, 0.2);
-    border: 1px solid rgba(97, 255, 246, 0.7);
-    box-shadow: 0 0 10px rgba(97, 255, 246, 0.2);
-    max-width: 40%;
-
+        .me_photo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                  img{
+                    width: 400px;
+                    z-index: 1;
+                    margin: 0 auto;
+                    padding: 0;
+                    filter: brightness(60%);
+                  }
+        }
+        .text_photo {
+             p{
+                justify-content: center;
+                font-size: 22px;
+                margin: 0 auto;
+                font-family: 'Montserrat', sans-serif;
+            }
     
-      p{
-          padding: 12px;
-          color: #fff;
-          font-size: 15px;
-          text-decoration: none;
-          font-family: 'Comic Neue';
-          letter-spacing: 2px;
-          text-align: justify;
-
-
-      }
-
-}
-@media (min-width: 981px) and (max-width: 1980px){
-    #about .text_in_photo p{
-        display: block;
-    }
-    #about .text_in_photo{
-         position: static;
-         margin-top: 280px;
-         margin-bottom: 80px;
-         transform: none;
-         max-width: 100%;
-         width: 600px;
-         margin-left: 430px;
+        }
     }
 }
-
-@media (max-width: 980px){
-    #about .text_in_photo p{
-        display: block;
-    }
-    #about .text_in_photo{
-         position: static;
-         margin-left: auto;
-         margin-right: auto;
-         margin-top: 340px;
-         margin-bottom: 80px;
-         transform: none;
-         max-width: 100%;
-         width: 600px;
+@media (max-width: 970px){
+    .half-circle img {
+        display: none;
     }
 }

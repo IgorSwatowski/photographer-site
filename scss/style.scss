@@ -3,6 +3,7 @@
 @import '_navbar.scss';
 @import '_typed.scss';
 @import '_buttontop.scss';
+@import '_about.scss';
 
 
 *{
@@ -12,5 +13,4 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(6, 6, 6);
-    overflow: hidden;
 }
