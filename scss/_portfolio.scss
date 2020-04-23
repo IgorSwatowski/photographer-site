@@ -1,0 +1,39 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 300px;
+  }
+  
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+        
+    img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+
+        &:hover{
+            transition: .3s all ease-in-out;
+            filter: brightness(115%);
+        }
+    }
+  }
+
+
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
