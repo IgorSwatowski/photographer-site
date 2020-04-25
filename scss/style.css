@@ -299,6 +299,7 @@ html {
 }
 
 #skills {
+  margin-top: 120px;
   margin-left: 5%;
   margin-right: 5%;
   padding: 0;
@@ -366,6 +367,7 @@ html {
   flex-wrap: wrap;
   padding: 0 4px;
   margin-bottom: 300px;
+  margin-top: 120px;
 }
 
 .column {
@@ -375,7 +377,7 @@ html {
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 10px;
   vertical-align: middle;
   width: 100%;
 }
@@ -396,6 +398,30 @@ html {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+.copy-right_text {
+  padding-bottom: 15px;
+  background: #0f0f0f;
+  text-align: center;
+}
+
+.copy-right_text .footer_border {
+  padding-bottom: 15px;
+}
+
+.copy-right_text .copy_right {
+  font-size: 13px;
+  color: #C7C7C7;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .copy-right_text .copy_right {
+    font-size: 13px;
+    text-align: center;
   }
 }
 
