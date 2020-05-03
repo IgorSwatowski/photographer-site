@@ -9,6 +9,10 @@
 @import '_contact.scss';
 
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
 }
