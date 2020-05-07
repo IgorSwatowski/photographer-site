@@ -9,3 +9,5 @@ Fictitious design of a person dealing with photography
 - Grid
 - AOS library
 
+# DEMO 
+Demo link: https://pedantic-goldstine-739988.netlify.app/
